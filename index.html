@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<!-- Created By OG07#7719 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Music - The Perfect Music Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <h1 class="logo">Family Music</h1>
+        <nav>
+            <ul class="nav-area top-nav">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#commands">Commands</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=1004802125857034240&permissions=8&scope=bot%20applications.commands" class="btn-area">Invite</a>
+    </header>
+    <!-- navbar end -->
+    <!-- home -->
+    <div class="wrapper">
+        <div class="home" id="home">
+            <div class="home-text">
+                <h1 id="botname">Family Music</h1>
+                <h3 style="margin-left: 0;">Why Should They Invite Family Music Bot?</h3>
+                <p class="bot-description">
+                    <b>THE PERFECT DISCORD MUSIC BOT TO HOST MUSIC EASILY ON YOUR SERVER WITH MULTIPLE OPTIONS. ADD <span style="color: #50009c;">Family Music</span> TODAY AND START LISTEN TO MUSIC IN YOUR COMMUNITY</b>
+                </p>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=1004802125857034240&permissions=8&scope=bot%20applications.commands"><button class="home-btn">Invite Me</button></a>
+            </div>
+            <div class="home-img">
+                <img src="https://cdn.discordapp.com/avatars/1004802125857034240/294890ad11bee82a0aa37cbbed3fa88c.png?size=512"
+                    alt="https://cdn.discordapp.com/avatars/1004802125857034240/294890ad11bee82a0aa37cbbed3fa88c.png?size=512">
+            </div>
+        </div>
+    </div>
+    <!-- home end -->
+    <!-- features -->
+    <div class="features">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="features"
+                    d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,202.7C672,171,768,117,864,96C960,75,1056,85,1152,106.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <div class="title">
+                <div class="th1">
+                    <h1>How To Get Started</h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+            <!-- feature start -->
+            <div class="features-grid">
+                <div class="feature feature1">
+                    <i class="fas fa-plus"></i>
+                    <h4>Invite Me</h4>
+                    <p>Click the invite link and select the server you want to add the bot to Your Server.
+                    </p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature2">
+                    <i class="fas fa-server"></i>
+                    <h4>Help Commands</h4>
+                    <p>The bot should respond with a list of available commands or a message to indicate how to access help.
+                    </p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature3">
+                    <i class="fab fa-angellist"></i>
+                    <h4>Start Command</h4>
+                    <p>Type the command to start a music, which is often "/play" but may vary depending on the bot you're using.
+                        </p>
+                </div>
+                <!-- feature end -->
+
+            </div>
+        </div>
+        <div class="curved">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="commands"
+                    d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,133.3C672,139,768,213,864,229.3C960,245,1056,203,1152,186.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- features end -->
+    <!-- commands -->
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>All Commands</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        <!-- Command Category -->
+        <nav>
+            <div class=" categorys">
+                <span class="category active" data-name="all">All</span>
+                <span class="category" data-name="music">Music</span>
+                <span class="category" data-name="filters">Filters</span>
+                <span class="category" data-name="premium">Premium</span>
+                <span class="category" data-name="information">Information</span>
+            </div>
+        </nav>
+        <!-- Commands -->
+        <div class="commands">
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Clearqueue</h2><span>
+                    <div class="cmdinfo">
+                        <p>/clearqueue</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Clear the current player queue.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Disconnect</h2><span>
+                    <div class="cmdinfo">
+                        <p>/disconnect</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Force Disconnect the bot from your voice channel.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Join</h2><span>
+                    <div class="cmdinfo">
+                        <p>/join</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Invite bot to your voice channel.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Loop</h2><span>
+                    <div class="cmdinfo">
+                        <p>/loop</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set loop mode to current song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Lyrics</h2><span>
+                    <div class="cmdinfo">
+                        <p>/lyrics</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Display lyrics for current played song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Now Playing</h2><span>
+                    <div class="cmdinfo">
+                        <p>/nowplaying</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Show the current playing song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Pause</h2><span>
+                    <div class="cmdinfo">
+                        <p>/pause</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Display lyrics for current played song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Play</h2><span>
+                    <div class="cmdinfo">
+                        <p>/play</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Play your favorite song/s.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Previous</h2><span>
+                    <div class="cmdinfo">
+                        <p>/previous</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Return to the previous song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Queue</h2><span>
+                    <div class="cmdinfo">
+                        <p>/queue</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Show current player queue.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Remove</h2><span>
+                    <div class="cmdinfo">
+                        <p>/remove</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Remove a song from the queue.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Replay</h2><span>
+                    <div class="cmdinfo">
+                        <p>/replay</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Replay the current song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Resume</h2><span>
+                    <div class="cmdinfo">
+                        <p>/resume</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Resume current paused song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Search</h2><span>
+                    <div class="cmdinfo">
+                        <p>/search</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Search for your favorite song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Seek</h2><span>
+                    <div class="cmdinfo">
+                        <p>/seek</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Seek the current played song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Shuffle</h2><span>
+                    <div class="cmdinfo">
+                        <p>/shuffle</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Shuffle the current player queue.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Skip</h2><span>
+                    <div class="cmdinfo">
+                        <p>/skip</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Skip the current played song.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>SkipTo</h2><span>
+                    <div class="cmdinfo">
+                        <p>/skipto</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Skip current played song to specific queue position.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Stop</h2><span>
+                    <div class="cmdinfo">
+                        <p>/stop</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Stop or disconnect the player.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Switch</h2><span>
+                    <div class="cmdinfo">
+                        <p>/switch</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Move the position of two songs.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="music">
+                <h2>Volume</h2><span>
+                    <div class="cmdinfo">
+                        <p>/volume</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the volume of the current player.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>8d</h2><span>
+                    <div class="cmdinfo">
+                        <p>/8d</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to 8d.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>BassBoost</h2><span>
+                    <div class="cmdinfo">
+                        <p>/bassboost</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to BassBoost.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>ChannelMix</h2><span>
+                    <div class="cmdinfo">
+                        <p>/channelmix</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to ChannelMix.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>Disable</h2><span>
+                    <div class="cmdinfo">
+                        <p>/disable</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Clear the current player filters.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>Earrape</h2><span>
+                    <div class="cmdinfo">
+                        <p>/earrape</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to EarRape.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>LowPass</h2><span>
+                    <div class="cmdinfo">
+                        <p>/lowpass</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to LowPass.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>Nightcore</h2><span>
+                    <div class="cmdinfo">
+                        <p>/nightcore</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to Nightcore.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>Rotation</h2><span>
+                    <div class="cmdinfo">
+                        <p>/rotation</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to Rotation.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>Timescale</h2><span>
+                    <div class="cmdinfo">
+                        <p>/timescale</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to Timescale.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>Tremolo</h2><span>
+                    <div class="cmdinfo">
+                        <p>/tremolo</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to Tremolo.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>Vaporwave</h2><span>
+                    <div class="cmdinfo">
+                        <p>/vaporwave</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to Vaporwave.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="filters">
+                <h2>Vibrato</h2><span>
+                    <div class="cmdinfo">
+                        <p>/vibrato</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Set the current player filter to Vibrato.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="premium">
+                <h2>247</h2><span>
+                    <div class="cmdinfo">
+                        <p>/247</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Toggle enable 24/7 in voice channel.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="premium">
+                <h2>Autoplay</h2><span>
+                    <div class="cmdinfo">
+                        <p>/autoplay</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Autoplay random related song/s.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="premium">
+                <h2>Control</h2><span>
+                    <div class="cmdinfo">
+                        <p>/control</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Display or hide the player control button.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="premium">
+                <h2>Profile</h2><span>
+                    <div class="cmdinfo">
+                        <p>/profile</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Show your premium status info.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="premium">
+                <h2>Redeem</h2><span>
+                    <div class="cmdinfo">
+                        <p>/redeem</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Redeem your premium code.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="information">
+                <h2>About</h2><span>
+                    <div class="cmdinfo">
+                        <p>/about</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Show information about the bot.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="information">
+                <h2>Help</h2><span>
+                    <div class="cmdinfo">
+                        <p>/help</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Display all commands of the bot.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="information">
+                <h2>Motivate</h2><span>
+                    <div class="cmdinfo">
+                        <p>/motivate</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Get Motivated.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="information">
+                <h2>Ping</h2><span>
+                    <div class="cmdinfo">
+                        <p>/ping</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Send a ping request.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="information">
+                <h2>Support</h2><span>
+                    <div class="cmdinfo">
+                        <p>/support</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>To Join Family Music Support Server.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="information">
+                <h2>Uptime</h2><span>
+                    <div class="cmdinfo">
+                        <p>/uptime</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Returns information about bot uptime.</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="developer">
+                <h2>Owner Commends</h2><span>
+                    <div class="cmdinfo">
+                        <p>Not Allow</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Sorry but this commends only owner bot can use it</p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+        </div>
+    </div>
+    <!-- commands end -->
+    <!-- faq -->
+    <div class="faq">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="faq"
+                    d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <main id="questions" role="main">
+                <div class="title">
+                    <div class="th1">
+                        <h1>Frequently Asked Questions</h1>
+                    </div>
+                    <center>
+                        <div class="thr">
+                            <hr>
+                        </div>
+                    </center>
+                </div>
+                <input type="text" class="live-search-box" placeholder="Search an Answer..." />
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+
+                        <h2 class="question">Hosting ?</h2>
+                        <span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> We use [Soon] Discord Bot server hosting as our bot hosting.
+                    </p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">Partnerships Available ?</h2>
+                        <span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> Unfortunately, partnerships are not available at the moment because the Discord bot is new.</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">What are the donation methods ?</h2>
+                        <span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> I'm sorry, but donation methods are not allowed right now.</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">Is BotName 24/7 online ?</h2>
+                        <span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> Yes, BotName is online 24/7 and available all the time.</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">How can we contact the support team ?</h2>
+                        <span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> Easy, Join us on our support server and get help instantly.</p>
+                </div>
+                <!-- question end -->
+            </main>
+        </div>
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1"
+                    d="M0,32L48,80C96,128,192,224,288,218.7C384,213,480,107,576,96C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- faq end -->
+    <div id="support"></div>
+    <!-- support server -->
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>Support Server</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        <!-- replace with your server widget and make the width 100% -->
+        <iframe src="https://discord.com/widget?id=1079100003433336933&theme=dark" width="100%" height="600"
+            allowtransparency="true" frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+    <!-- support server end -->
+    <div class="curve">
+        <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1"
+                d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,202.7C672,224,768,224,864,224C960,224,1056,224,1152,234.7C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- footer -->
+    <footer>
+
+        <div class="wrapper">
+            <div class="foot">
+                <h1>Family Music</h1>
+                <nav>
+                    <ul class="nav-area bottom-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service.html">Terms Of Service</a></li>
+                    </ul>
+                </nav>
+                <h4>Copyright © 2024 Family Music.</h4>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="main.js"></script>
+    <script src="commands.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</body>
+
+
+</html>

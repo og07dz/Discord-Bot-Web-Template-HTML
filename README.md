@@ -1,1 +1,1 @@
-# Discord-Bot-Web-Template-HTML
+# Discord Bot - Web Template HTML
